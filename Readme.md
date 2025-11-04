@@ -51,26 +51,26 @@ Google Fonts - Police Poppins
 
 html2pdf.js - Génération de PDF côté client
 
-📁 Structure des Fichiers
-text
 MINIPROJETWEBDEV/
 │
-├── 📄 index.html              # Page principale HTML5 sémantique
-├── 🎨 style.css               # Styles avec variables CSS et animations
-├── ⚡ script.js               # JavaScript vanilla avec toutes les fonctionnalités
+├── 📄 index.html                 # Page principale HTML5 sémantique
+├── 🎨 style.css                  # Styles avec variables CSS et animations  
+├── ⚡ script.js                  # JavaScript vanilla - Toutes fonctionnalités
 │
 ├── 📁 assets/
 │   ├── 📁 images/
-│   │   ├── 📸 profile.jpg     # Photo de profil
-│   │   ├── 🇫🇷 france.png     # Drapeau français
-│   │   ├── 🇬🇧 uk.png         # Drapeau anglais
-│   │   ├── 🇪🇸 spain.png      # Drapeau espagnol
-│   │   └── 🇹🇳 tunisia.png    # Drapeau tunisien
+│   │   ├── 📸 profile.jpg        # Photo de profil professionnelle
+│   │   ├── 🇫🇷 france.png        # Drapeau français
+│   │   ├── 🇬🇧 uk.png            # Drapeau anglais
+│   │   ├── 🇪🇸 spain.png         # Drapeau espagnol
+│   │   └── 🇹🇳 tunisia.png       # Drapeau tunisien
 │   │
 │   └── 📁 docs/
-│       └── 📄 cv-export.pdf   # Exports PDF générés
+│       └── 📄 cv-export.pdf      # Exports PDF générés
 │
-└── 📄 README.md               # Documentation du projet
+└── 📄 README.md                  # Documentation du projet
+
+
 🎯 Sections du CV
 👤 En-tête Personnel
 Photo professionnelle avec animation de flottement
