@@ -1,104 +1,146 @@
-CV Interactif - Fakher Neila
+💼 CV Interactif — Fakher Neila
+
+## 🌐 Démo en Ligne
+
+🚀 Découvrez le projet en direct :  
+👉 **[https://fakherneila.netlify.app/](https://fakherneila.netlify.app/)**
+
+---
 📋 Description
-CV interactif moderne et responsive développé avec HTML5, CSS3 et JavaScript vanilla. Ce projet présente mon parcours professionnel, mes compétences techniques et mes certifications de manière dynamique et attrayante avec des fonctionnalités interactives avancées.
+
+CV interactif moderne et responsive développé avec HTML5, CSS3, et JavaScript vanilla.
+Ce projet présente mon parcours professionnel, mes compétences techniques et mes certifications de manière dynamique et attrayante, grâce à des animations fluides et des fonctionnalités interactives avancées.
 
 ✨ Fonctionnalités Principales
 🎨 Interface & Design
-Design Moderne : Interface épurée avec animations fluides et micro-interactions
 
-Responsive Design : Adapté à tous les écrans (mobile, tablette, desktop)
+Design moderne : Interface épurée avec animations fluides et micro-interactions
 
-Mode Clair/Sombre : Basculable avec persistance via localStorage
+Responsive design : Adaptation parfaite sur mobile, tablette, et desktop
 
-Animations Avancées : Effets de hover, scroll animations et transitions CSS3
+Mode clair/sombre : Basculable avec persistance via localStorage
+
+Animations avancées : Effets hover, scroll animations, et transitions CSS3
 
 ⚡ Fonctionnalités JavaScript
-📊 Barres de Compétences Animées : Animation au scroll avec progression visuelle
 
-📄 Téléchargement PDF Dynamique : Génération et export du CV en PDF avec html2pdf.js
+📊 Barres de compétences animées : Progression visuelle déclenchée au scroll
 
-🌙 Mode Clair/Sombre : Persistance des préférences avec localStorage
+📄 Téléchargement PDF dynamique : Export du CV en PDF via html2pdf.js
 
-🔗 Navigation Fluide : Scroll smooth entre les sections (ancres)
+🌙 Mode clair/sombre persistant : Sauvegarde des préférences utilisateur avec localStorage
 
-📖 Affichage Conditionnel : Clic pour voir plus de détails sur expériences et projets
+🔗 Navigation fluide : Défilement smooth entre les sections via ancres
 
-⏰ Timeline Interactive : Parcours professionnel animé au défilement
+📖 Affichage conditionnel : Détails d’expériences et projets affichés au clic
 
-🔧 Filtrage des Compétences : Tri par catégorie (Frontend, Backend, Database, Tools)
+⏰ Timeline interactive : Parcours professionnel animé au défilement
+
+🔧 Filtrage des compétences : Tri par catégorie (Frontend, Backend, Database, Tools)
 
 🛠️ Fonctionnalités Techniques
-HTML5 Sémantique : Structure accessible et optimisée SEO
 
-CSS3 Moderne : Variables CSS, Grid, Flexbox, Animations keyframes
+HTML5 sémantique : Structure claire, accessible et optimisée pour le SEO
 
-JavaScript Vanilla : DOM manipulation, Events, Intersection Observer API
+CSS3 moderne : Utilisation de variables CSS, Grid, Flexbox, et animations keyframes
 
-Version Imprimable Optimisée : CSS print dédié pour export papier/PDF
+JavaScript Vanilla : Manipulation du DOM, gestion d’événements, et utilisation de l’Intersection Observer API
 
-🛠️ Stack Technologique
-Frontend
-HTML5 - Structure sémantique avec balises modernes
+Version imprimable optimisée : Feuille de style CSS print dédiée pour export papier/PDF
 
-CSS3 - Variables CSS, Grid, Flexbox, Animations, Media Queries
+🧰 Stack Technologique
+🖥️ Frontend
 
-JavaScript ES6+ - Modules, classes, async/await, localStorage
+HTML5 – Structure sémantique et accessible
 
-Bibliothèques & Outils
-Font Awesome 6.5 - Icônes vectorielles
+CSS3 – Variables, Grid, Flexbox, animations, media queries
 
-Google Fonts - Police Poppins
+JavaScript (ES6+) – Modules, classes, async/await, localStorage
 
-html2pdf.js - Génération de PDF côté client
+📚 Bibliothèques & Outils
+
+Font Awesome 6.5 – Icônes vectorielles modernes
+
+Google Fonts (Poppins) – Typographie élégante
+
+html2pdf.js – Génération de PDF côté client
 
 🎯 Sections du CV
 👤 En-tête Personnel
-Photo professionnelle avec animation de flottement
+
+Photo professionnelle avec animation flottante
 
 Informations de contact complètes
 
-Liens sociaux (LinkedIn, GitHub)
+Liens sociaux : LinkedIn, GitHub
 
-Boutons d'impression et téléchargement PDF
+Boutons pour imprimer ou télécharger le CV en PDF
 
 💼 Expériences Professionnelles
+
 Timeline interactive avec animations au scroll
 
-Détails conditionnels au clic pour plus d'informations
+Détails supplémentaires affichés au clic
 
 Organisation chronologique inversée
 
-Effets de hover et indicateurs visuels
+Effets de hover et indicateurs visuels dynamiques
 
 🛠️ Compétences Techniques
+
 Frontend : Angular, React, Vue.js, TypeScript, JavaScript, HTML5, CSS3
-
 Backend : Node.js, Express.js, Spring Boot, PHP, REST APIs
-
 Bases de Données : MySQL, MongoDB, PostgreSQL, SQL
-
 Outils & Sécurité : Git, Docker, OWASP, CTF, Web Security
 
 🌐 Fonctionnalités Interactives
-Filtrage des compétences par catégorie avec boutons interactifs
+
+Filtrage dynamique des compétences par catégorie
 
 Barres de progression animées avec pourcentages visuels
 
-Affichage conditionnel des détails projets et expériences
+Affichage conditionnel des projets et expériences
 
 Thème clair/sombre avec icône dynamique
 
 🚀 Installation et Utilisation
-Méthode Simple
-bash
+
+🔹 Méthode Simple
+
 # Cloner le repository
 git clone [url-du-repo]
 cd MINIPROJETWEBDEV
 
-# Ouvrir dans le navigateur
+# Ouvrir le fichier dans le navigateur
 open index.html
 # ou
 firefox index.html
 # ou
 chrome index.html
-Serveur Local (Recommandé)
+
+🔹 Serveur Local (Recommandé)
+
+Utilisez un serveur local (ex : Live Server sur VS Code) pour un rendu optimal des animations, des interactions et du mode PDF.
+
+🧾 Notes Techniques
+
+Les préférences utilisateur (thème clair/sombre) sont enregistrées localement via localStorage.
+
+La génération du PDF est entièrement côté client avec html2pdf.js.
+
+Les animations au scroll sont gérées grâce à l’Intersection Observer API.
+
+Un CSS print spécifique garantit un rendu imprimable professionnel.
+
+## 📸 Aperçu
+
+![Aperçu du CV Interactif](./assets/sc1.png)
+![Aperçu du CV Interactif](./assets/sc2.png)
+
+## 📁 Structure du Projet
+
+Voici la structure actuelle du projet :
+
+![Structure du projet](./Assets/pr.png)
+
+
