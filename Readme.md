@@ -132,11 +132,6 @@ Les animations au scroll sont gérées grâce à l’Intersection Observer API.
 
 Un CSS print spécifique garantit un rendu imprimable professionnel.
 
-## 📸 Aperçu
-
-![Aperçu du CV Interactif](./assets/sc1.png)
-![Aperçu du CV Interactif](./assets/sc2.png)
-
 ## 📁 Structure du Projet
 
 Voici la structure actuelle du projet :
