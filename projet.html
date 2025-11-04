@@ -4,21 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV — Fakher Neila</title>
+  <link rel="icon" href="Assets/user-icon.jpeg" type="image/x-icon" />
 
   <!-- FontAwesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="projet.css" />
 </head>
 
 <body>
-  <!-- ====== HEADER / HERO SECTION ====== -->
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" class="theme-toggle" title="Changer le thème">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+
+  <!-- ====== HEADER ====== -->
   <header class="hero">
     <div class="container hero-content">
 
       <!-- Profile photo -->
-      <img src="/Assets/profil.jpg" alt="Photo de Fakher Neila" class="photo" />
+      <img src="Assets/profil.jpg" alt="Photo de Fakher Neila" class="photo" />
 
       <!-- Personal info and contact -->
       <div class="info">
@@ -27,16 +36,19 @@
 
         <!-- Contact info section -->
         <div class="contacts">
-          <p><i class="fa-solid fa-envelope"></i> fakherneila8@gmail.com</p>
+          <p><i class="fa-solid fa-envelope"></i> neilafakher8@gmail.com</p>
           <p><i class="fa-solid fa-phone"></i> +216 26511871</p>
           <p><i class="fa-solid fa-location-dot"></i> Sousse, Tunisie</p>
-          <p><i class="fa-solid fa-globe"></i> fakherneila.com</p>
+          
         </div>
 
         <!-- Print + social links -->
         <div class="action-buttons">
-          <button onclick="window.print()" class="btn-print">
+          <button onclick="window.print()" class="btn-print no-print">
             <i class="fa-solid fa-print"></i> Imprimer le CV
+          </button>
+          <button id="download-pdf" class="btn-pdf no-print">
+            <i class="fa-solid fa-download"></i> Télécharger PDF
           </button>
 
           <!-- Social media links -->
@@ -82,10 +94,12 @@
               <div class="timeline-content">
                 <h3>Vice Président — Cyber Trace</h3>
                 <span>Sept 2025 – Présent · 2 mois · Issatso</span>
-                <p>
+                <p class="details hidden">
                   Direction et gestion des activités du club de cybersécurité.
                   Organisation d'événements et promotion de la sécurité informatique.
+                  Coordination d'équipes et gestion de projets de sécurité.
                 </p>
+                <button class="btn-more">Voir plus</button>
               </div>
             </div>
 
@@ -94,10 +108,12 @@
               <div class="timeline-content">
                 <h3>Stagiaire Développeur FrontEnd — Nachd-IT</h3>
                 <span>Juil 2025 – Sept 2025 · 3 mois · À distance</span>
-                <p>
+                <p class="details hidden">
                   Développement d'interfaces utilisateur modernes et responsives.
                   Intégration de designs et optimisation des performances frontend.
+                  Collaboration avec l'équipe UX/UI et participation aux revues de code.
                 </p>
+                <button class="btn-more">Voir plus</button>
               </div>
             </div>
 
@@ -106,10 +122,12 @@
               <div class="timeline-content">
                 <h3>Stagiaire Front-end Developer — Tachafy</h3>
                 <span>Juin 2025 – Août 2025 · 3 mois · Lyon (À distance)</span>
-                <p>
-                  Développement d'applications web frontend.
-                  Collaboration avec l'équipe backend pour l'intégration d'APIs.
+                <p class="details hidden">
+                  Développement d'applications web frontend avec React.js.
+                  Collaboration avec l'équipe backend pour l'intégration d'APIs REST.
+                  Implémentation de tests unitaires et d'intégration.
                 </p>
+                <button class="btn-more">Voir plus</button>
               </div>
             </div>
 
@@ -118,10 +136,12 @@
               <div class="timeline-content">
                 <h3>Instructeur Développement Web — Microsoft ISSATso Club</h3>
                 <span>Sept 2024 – Mai 2025 · 9 mois · Sousse, Tunisie</span>
-                <p>
+                <p class="details hidden">
                   Enseignement des technologies web modernes aux membres du club.
                   Organisation d'ateliers et formation aux bonnes pratiques de développement.
+                  Création de supports de cours et exercices pratiques.
                 </p>
+                <button class="btn-more">Voir plus</button>
               </div>
             </div>
           </div>
@@ -131,8 +151,8 @@
         <section id="formations" class="fade-in">
           <h2><i class="fa-solid fa-graduation-cap"></i> Formations</h2>
           <ul class="education">
-            <li><strong>Cycle Ingénieur en Génie Logiciel</strong> — Institut Superieur de Technologie de Sousse (2022 - Présent)</li>
-            <li><strong>Baccalauréat en Sciences Technique </strong> — Lycée Secondaire Makther (2022)</li>
+            <li><strong>Cycle Ingénieur en Génie Logiciel</strong> — Institut Supérieur de Technologie de Sousse (2022 - Présent)</li>
+            <li><strong>Baccalauréat en Sciences Technique</strong> — Lycée Secondaire Makther (2022)</li>
           </ul>
         </section>
 
@@ -144,34 +164,50 @@
             <!-- Each project-item = one project -->
             <div class="project-item">
               <h3>Application de Gestion Médicale</h3>
-              <p>Application web complète pour la gestion des rendez-vous et dossiers patients dans un cabinet médical.</p>
+              <p class="project-summary">Application web complète pour la gestion des rendez-vous et dossiers patients dans un cabinet médical.</p>
+              <div class="project-details hidden">
+                <p><strong>Fonctionnalités:</strong> Gestion des patients, prise de rendez-vous en ligne, historique médical, prescriptions électroniques</p>
+                <p><strong>Défis relevés:</strong> Sécurité des données médicales, interface intuitive pour personnel médical</p>
+              </div>
               <div class="project-tech">
                 <span>Angular</span>
                 <span>Spring Boot</span>
                 <span>MySQL</span>
+                <span>JWT</span>
               </div>
+              <button class="btn-project-more">Voir les détails</button>
             </div>
 
             <div class="project-item">
               <h3>Plateforme E-commerce Sécurisée</h3>
-              <p>Site e-commerce avec système de paiement sécurisé et gestion d'inventaire.</p>
+              <p class="project-summary">Site e-commerce avec système de paiement sécurisé et gestion d'inventaire.</p>
+              <div class="project-details hidden">
+                <p><strong>Fonctionnalités:</strong> Paiement en ligne sécurisé, gestion des stocks, système de recommandations, dashboard admin</p>
+                <p><strong>Défis relevés:</strong> Sécurité des transactions, optimisation des performances, UX mobile</p>
+              </div>
               <div class="project-tech">
                 <span>React</span>
                 <span>Node.js</span>
                 <span>MongoDB</span>
                 <span>Stripe API</span>
               </div>
+              <button class="btn-project-more">Voir les détails</button>
             </div>
 
             <div class="project-item">
               <h3>Dashboard Analytics</h3>
-              <p>Tableau de bord interactif pour la visualisation de données en temps réel.</p>
+              <p class="project-summary">Tableau de bord interactif pour la visualisation de données en temps réel.</p>
+              <div class="project-details hidden">
+                <p><strong>Fonctionnalités:</strong> Visualisation de données en temps réel, rapports personnalisables, alertes automatiques</p>
+                <p><strong>Défis relevés:</strong> Traitement de gros volumes de données, interface responsive, performances en temps réel</p>
+              </div>
               <div class="project-tech">
                 <span>Vue.js</span>
                 <span>Express.js</span>
                 <span>PostgreSQL</span>
                 <span>Chart.js</span>
               </div>
+              <button class="btn-project-more">Voir les détails</button>
             </div>
           </div>
         </section>
@@ -180,60 +216,157 @@
       <!-- === RIGHT COLUMN === -->
       <div class="right-column">
 
+        <!-- Skills Filter -->
+        <div class="skills-filter fade-in">
+          <h3>Filtrer les compétences:</h3>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Toutes</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="database">Bases de données</button>
+            <button class="filter-btn" data-filter="tools">Outils & Sécurité</button>
+          </div>
+        </div>
+
         <!-- Skills section -->
         <section id="competences" class="fade-in">
           <h2><i class="fa-solid fa-code"></i> Compétences Techniques</h2>
 
           <div class="skills-grid">
             <!-- Each skill-category groups related skills -->
-            <div class="skill-category">
+            <div class="skill-category" data-category="frontend">
               <h3>Frontend</h3>
               <div class="skill-tags">
-                <span class="skill-tag">Angular</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Vue.js</span>
-                <span class="skill-tag">TypeScript</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">HTML5</span>
-                <span class="skill-tag">CSS3</span>
-                <span class="skill-tag">Bootstrap</span>
-                <span class="skill-tag">Tailwind</span>
+                <div class="skill-item">
+                  <span class="skill-name">Angular</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="90"></div>
+                  </div>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">React</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="85"></div>
+                  </div>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Vue.js</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="75"></div>
+                  </div>
+                  <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">TypeScript</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="80"></div>
+                  </div>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">JavaScript</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="95"></div>
+                  </div>
+                  <span class="skill-percent">95%</span>
+                </div>
               </div>
             </div>
 
-            <div class="skill-category">
+            <div class="skill-category" data-category="backend">
               <h3>Backend</h3>
               <div class="skill-tags">
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">Express.js</span>
-                <span class="skill-tag">Spring Boot</span>
-                <span class="skill-tag">PHP</span>
-                <span class="skill-tag">REST APIs</span>
-                <span class="skill-tag">GraphQL</span>
+                <div class="skill-item">
+                  <span class="skill-name">Node.js</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="88"></div>
+                  </div>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Express.js</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="85"></div>
+                  </div>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Spring Boot</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="70"></div>
+                  </div>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">PHP</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="75"></div>
+                  </div>
+                  <span class="skill-percent">75%</span>
+                </div>
               </div>
             </div>
 
-            <div class="skill-category">
+            <div class="skill-category" data-category="database">
               <h3>Bases de Données</h3>
               <div class="skill-tags">
-                <span class="skill-tag">MySQL</span>
-                <span class="skill-tag">MongoDB</span>
-                <span class="skill-tag">PostgreSQL</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Firebase</span>
+                <div class="skill-item">
+                  <span class="skill-name">MySQL</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="85"></div>
+                  </div>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">MongoDB</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="80"></div>
+                  </div>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">PostgreSQL</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="75"></div>
+                  </div>
+                  <span class="skill-percent">75%</span>
+                </div>
               </div>
             </div>
 
-            <div class="skill-category">
+            <div class="skill-category" data-category="tools">
               <h3>Outils & Sécurité</h3>
               <div class="skill-tags">
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">Figma</span>
-                <span class="skill-tag">Adobe XD</span>
-                <span class="skill-tag">OWASP</span>
-                <span class="skill-tag">CTF</span>
-                <span class="skill-tag">Web Security</span>
+                <div class="skill-item">
+                  <span class="skill-name">Git</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="90"></div>
+                  </div>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Docker</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="70"></div>
+                  </div>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">OWASP</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="65"></div>
+                  </div>
+                  <span class="skill-percent">65%</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Web Security</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level="75"></div>
+                  </div>
+                  <span class="skill-percent">75%</span>
+                </div>
               </div>
             </div>
           </div>
@@ -263,7 +396,7 @@
             </div>
 
             <div class="language-item">
-              <img src="/Assets/tunisia.webp" alt="Drapeau tunisien" class="language-flag">
+              <img src="Assets/tunisia.webp" alt="Drapeau tunisien" class="language-flag">
               <div class="language-name">Arabe</div>
               <div class="language-level">Langue maternelle</div>
             </div>
@@ -339,6 +472,9 @@
   <footer>
     <p>© <span id="year"></span> Fakher Neila — CV Interactif</p>
   </footer>
+
+  <!-- HTML2PDF Library importation-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
   <!-- ====== JS FILE ====== -->
   <script src="projet.js"></script>
