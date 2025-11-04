@@ -29,13 +29,13 @@ Google Fonts : Police Poppins
 
 MINIPROJETWEBDEV/
 │
-├── index.html              # Fichier principal HTML
-├── style.css               # Feuille de style principale
-├── script.js               # Script JavaScript pour les interactions
+├── projet.html              # Fichier principal HTML
+├── projet.css               # Feuille de style principale
+├── projet.js               # Script JavaScript pour les interactions
 ├── assets/                 # Dossier des ressources
 │   ├── images/             # Images et photos
-│   │   └── profile.jpg     # Photo de profil
-│   └── icons/              # Icônes supplémentaires
+│     └── profile.jpg     # Photo de profil
+│               
 └── README.md               # Documentation du projet
 
 🎯 Sections du CV
