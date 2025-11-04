@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Fakher Neila</title>
+
+  <!-- FontAwesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="projet.css" />
+</head>
+
+<body>
+  <!-- ====== HEADER / HERO SECTION ====== -->
+  <header class="hero">
+    <div class="container hero-content">
+
+      <!-- Profile photo -->
+      <img src="/Assets/profil.jpg" alt="Photo de Fakher Neila" class="photo" />
+
+      <!-- Personal info and contact -->
+      <div class="info">
+        <h1>Fakher <span>Neila</span></h1>
+        <p class="job-title">Développeur Web Full Stack & Enthousiaste Cybersécurité</p>
+
+        <!-- Contact info section -->
+        <div class="contacts">
+          <p><i class="fa-solid fa-envelope"></i> fakherneila8@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +216 26511871</p>
+          <p><i class="fa-solid fa-location-dot"></i> Sousse, Tunisie</p>
+          <p><i class="fa-solid fa-globe"></i> fakherneila.com</p>
+        </div>
+
+        <!-- Print + social links -->
+        <div class="action-buttons">
+          <button onclick="window.print()" class="btn-print">
+            <i class="fa-solid fa-print"></i> Imprimer le CV
+          </button>
+
+          <!-- Social media links -->
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/ne%C3%AFla-fakher-a00901247/" target="_blank" rel="noopener" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/fakherneila" target="_blank" title="GitHub" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== MAIN CONTENT ====== -->
+  <main class="container">
+    <div class="main-grid">
+
+      <!-- === LEFT COLUMN === -->
+      <div class="left-column">
+
+        <!-- Profile section -->
+        <section id="profil" class="fade-in">
+          <h2><i class="fa-solid fa-user"></i> Profil</h2>
+          <p>
+            Développeur web full stack passionné par la création d'applications web modernes et performantes.
+            Spécialisé en technologies frontend et backend avec un intérêt croissant pour la cybersécurité.
+            Je maîtrise les frameworks modernes comme Angular et React, et suis constamment à la recherche
+            de nouveaux défis pour améliorer mes compétences en développement sécurisé et expérience utilisateur.
+          </p>
+        </section>
+
+        <!-- Professional experience timeline -->
+        <section id="experiences" class="fade-in">
+          <h2><i class="fa-solid fa-briefcase"></i> Expériences Professionnelles</h2>
+
+          <div class="timeline">
+            <!-- Each timeline-item = one job or internship -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Vice Président — Cyber Trace</h3>
+                <span>Sept 2025 – Présent · 2 mois · Issatso</span>
+                <p>
+                  Direction et gestion des activités du club de cybersécurité.
+                  Organisation d'événements et promotion de la sécurité informatique.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Stagiaire Développeur FrontEnd — Nachd-IT</h3>
+                <span>Juil 2025 – Sept 2025 · 3 mois · À distance</span>
+                <p>
+                  Développement d'interfaces utilisateur modernes et responsives.
+                  Intégration de designs et optimisation des performances frontend.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Stagiaire Front-end Developer — Tachafy</h3>
+                <span>Juin 2025 – Août 2025 · 3 mois · Lyon (À distance)</span>
+                <p>
+                  Développement d'applications web frontend.
+                  Collaboration avec l'équipe backend pour l'intégration d'APIs.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Instructeur Développement Web — Microsoft ISSATso Club</h3>
+                <span>Sept 2024 – Mai 2025 · 9 mois · Sousse, Tunisie</span>
+                <p>
+                  Enseignement des technologies web modernes aux membres du club.
+                  Organisation d'ateliers et formation aux bonnes pratiques de développement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section id="formations" class="fade-in">
+          <h2><i class="fa-solid fa-graduation-cap"></i> Formations</h2>
+          <ul class="education">
+            <li><strong>Cycle Ingénieur en Génie Logiciel</strong> — Institut Superieur de Technologie de Sousse (2022 - Présent)</li>
+            <li><strong>Baccalauréat en Sciences Technique </strong> — Lycée Secondaire Makther (2022)</li>
+          </ul>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projets" class="fade-in">
+          <h2><i class="fa-solid fa-laptop-code"></i> Projets Réalisés</h2>
+          <div class="projects-grid">
+
+            <!-- Each project-item = one project -->
+            <div class="project-item">
+              <h3>Application de Gestion Médicale</h3>
+              <p>Application web complète pour la gestion des rendez-vous et dossiers patients dans un cabinet médical.</p>
+              <div class="project-tech">
+                <span>Angular</span>
+                <span>Spring Boot</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+
+            <div class="project-item">
+              <h3>Plateforme E-commerce Sécurisée</h3>
+              <p>Site e-commerce avec système de paiement sécurisé et gestion d'inventaire.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Stripe API</span>
+              </div>
+            </div>
+
+            <div class="project-item">
+              <h3>Dashboard Analytics</h3>
+              <p>Tableau de bord interactif pour la visualisation de données en temps réel.</p>
+              <div class="project-tech">
+                <span>Vue.js</span>
+                <span>Express.js</span>
+                <span>PostgreSQL</span>
+                <span>Chart.js</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- === RIGHT COLUMN === -->
+      <div class="right-column">
+
+        <!-- Skills section -->
+        <section id="competences" class="fade-in">
+          <h2><i class="fa-solid fa-code"></i> Compétences Techniques</h2>
+
+          <div class="skills-grid">
+            <!-- Each skill-category groups related skills -->
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Angular</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Vue.js</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">Bootstrap</span>
+                <span class="skill-tag">Tailwind</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Express.js</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">GraphQL</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Bases de Données</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Firebase</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Outils & Sécurité</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Adobe XD</span>
+                <span class="skill-tag">OWASP</span>
+                <span class="skill-tag">CTF</span>
+                <span class="skill-tag">Web Security</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Language section -->
+        <section id="langues" class="fade-in">
+          <h2><i class="fa-solid fa-language"></i> Langues</h2>
+          <div class="languages-grid">
+            <!-- Each language-item shows a flag + level -->
+            <div class="language-item">
+              <img src="Assets/france.png" alt="Drapeau français" class="language-flag">
+              <div class="language-name">Français</div>
+              <div class="language-level">Courant</div>
+            </div>
+
+            <div class="language-item">
+              <img src="Assets/Flag_of_England.svg.png" alt="Drapeau anglais" class="language-flag">
+              <div class="language-name">Anglais</div>
+              <div class="language-level">Intermédiaire</div>
+            </div>
+
+            <div class="language-item">
+              <img src="Assets/Flag_of_Spain.svg" alt="Drapeau espagnol" class="language-flag">
+              <div class="language-name">Espagnol</div>
+              <div class="language-level">Débutant</div>
+            </div>
+
+            <div class="language-item">
+              <img src="/Assets/tunisia.webp" alt="Drapeau tunisien" class="language-flag">
+              <div class="language-name">Arabe</div>
+              <div class="language-level">Langue maternelle</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="fade-in">
+          <h2><i class="fa-solid fa-certificate"></i> Certifications</h2>
+          <div class="certifications-grid">
+            <div class="certification-item">
+              <h3>CTF - Cyber Trace</h3>
+              <p>Émise en avril 2025 - Expire en avril 2027</p>
+            </div>
+            <div class="certification-item">
+              <h3>Getting Started with AI on Jetson Nano</h3>
+              <p>NVIDIA - Émise en avril 2025</p>
+            </div>
+            <div class="certification-item">
+              <h3>Learn OpenUSD</h3>
+              <p>NVIDIA - Émise en avril 2025</p>
+            </div>
+            <div class="certification-item">
+              <h3>Certificate Of Completion</h3>
+              <p>Microsoft ISSATso Club</p>
+            </div>
+            <div class="certification-item">
+              <h3>Certificate of Appreciation</h3>
+              <p>Microsoft ISSATso Club</p>
+            </div>
+            <div class="certification-item">
+              <h3>Participation CYBER Summit</h3>
+              <p>12-13 avril 2025</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Hobbies -->
+        <section id="hobbies" class="fade-in">
+          <h2><i class="fa-solid fa-heart"></i> Centres d'intérêt</h2>
+          <div class="hobbies-grid">
+            <div class="hobby-item">
+              <div class="hobby-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="hobby-name">Programmation</div>
+            </div>
+            <div class="hobby-item">
+              <div class="hobby-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="hobby-name">Cybersécurité</div>
+            </div>
+            <div class="hobby-item">
+              <div class="hobby-icon"><i class="fa-solid fa-palette"></i></div>
+              <div class="hobby-name">UI/UX Design</div>
+            </div>
+            <div class="hobby-item">
+              <div class="hobby-icon"><i class="fa-solid fa-futbol"></i></div>
+              <div class="hobby-name">Football</div>
+            </div>
+            <div class="hobby-item">
+              <div class="hobby-icon"><i class="fa-solid fa-book"></i></div>
+              <div class="hobby-name">Lecture Tech</div>
+            </div>
+            <div class="hobby-item">
+              <div class="hobby-icon"><i class="fa-solid fa-chess"></i></div>
+              <div class="hobby-name">Échecs</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <p>© <span id="year"></span> Fakher Neila — CV Interactif</p>
+  </footer>
+
+  <!-- ====== JS FILE ====== -->
+  <script src="projet.js"></script>
+</body>
+</html>
