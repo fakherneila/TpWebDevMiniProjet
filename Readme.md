@@ -25,3 +25,51 @@ JavaScript : Interactions et animations
 Font Awesome : Icônes
 
 Google Fonts : Police Poppins
+📁 Structure des Fichiers
+
+MINIPROJETWEBDEV/
+│
+├── index.html              # Fichier principal HTML
+├── style.css               # Feuille de style principale
+├── script.js               # Script JavaScript pour les interactions
+├── assets/                 # Dossier des ressources
+│   ├── images/             # Images et photos
+│   │   └── profile.jpg     # Photo de profil
+│   └── icons/              # Icônes supplémentaires
+└── README.md               # Documentation du projet
+
+🎯 Sections du CV
+En-tête - Photo, informations de contact et liens sociaux
+
+Profil - Présentation personnelle
+
+Expériences Professionnelles - Timeline interactive
+
+Formations - Parcours académique
+
+Projets - Réalisations techniques
+
+Compétences - Technologies maîtrisées
+
+Langues - Niveaux linguistiques avec drapeaux
+
+Certifications - Diplômes et certifications
+
+Centres d'intérêt - Hobbies et passions
+
+🚀 Installation et Utilisation
+Téléchargement :
+git clone [url-du-repo]
+cd MINIPROJETWEBDEV
+
+Ouverture :
+
+Ouvrez le fichier index.html dans votre navigateur web
+
+Aucune installation supplémentaire requise
+
+Développement :
+
+Modifiez les fichiers selon vos besoins
+
+Les changements sont visibles immédiatement après actualisation
